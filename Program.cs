@@ -12,7 +12,7 @@
   }
 
   public void StartGame() {
-    while(playerScore != 3 && computerScore != 3)
+    while(playerScore < 3 && computerScore < 3)
     {
       Console.WriteLine(); // Print a blank line
       Console.WriteLine($"| Player Score: {playerScore} | Computer Score: {computerScore} |");
@@ -79,6 +79,19 @@
           }
         }
       }
+    
+    if (playerScore == 3)
+    {
+      Console.WriteLine();
+      Console.WriteLine($"| Player Score: {playerScore} | Computer Score: {computerScore} |");
+      Console.WriteLine("Player Wins! Well Done!");
+    } 
+    else
+    {
+      Console.WriteLine();
+      Console.WriteLine($"| Player Score: {playerScore} | Computer Score: {computerScore} |");
+      Console.WriteLine("Computer Wins! Better luck next time...");
+    }
     }
 }
 
