@@ -21,7 +21,7 @@
 
       int computerChoice = random.Next(0, 3);
 
-      if(computerChoice == 0) // Computer chooses Rock
+      if (computerChoice == 0) // Computer chooses Rock
         {
           Console.WriteLine("Computer chose Rock.");
 
@@ -31,17 +31,55 @@
               Console.WriteLine("Tie!");
               break;
             case "p":
-              Console.WriteLine("Player wins this round!");
+              Console.WriteLine("Player Wins!");
               playerScore++;
               break;
             case "s":
-              Console.WriteLine("Computer wins!");
+              Console.WriteLine("Computer Wins!");
               computerScore++;
               break;
           }
         }
+        else if (computerChoice == 1) // Computer chooses Paper
+        {
+          Console.WriteLine("Computer chose Paper.");
+
+          switch (playerChoice)
+          {
+            case "r":
+              Console.WriteLine("Computer Wins!");
+              computerScore++;
+              break;
+            case "p":
+              Console.WriteLine("Tie!");
+              break;
+            case "s":
+              Console.WriteLine("Player Wins!");
+              playerScore++;
+              break;
+          }
+        }
+        else if (computerChoice == 2) // Computer chooses Scissors
+        {
+          Console.WriteLine("Computer chose Scissors.");
+
+          switch (playerChoice)
+          {
+            case "r":
+              Console.WriteLine("Player Wins!");
+              playerScore++;
+              break;
+            case "p":
+              Console.WriteLine("Computer Wins!");
+              computerScore++;
+              break;
+            case "s":
+              Console.WriteLine("Tie!");
+              break;
+          }
+        }
+      }
     }
-  }
 }
 
 class Program
