@@ -38,6 +38,9 @@
               Console.WriteLine("Computer Wins!");
               computerScore++;
               break;
+            default:
+              Console.WriteLine("Invalid choice!");
+              break;
           }
         }
         else if (computerChoice == 1) // Computer chooses Paper
@@ -57,6 +60,9 @@
               Console.WriteLine("Player Wins!");
               playerScore++;
               break;
+            default:
+              Console.WriteLine("Invalid choice!");
+              break;
           }
         }
         else if (computerChoice == 2) // Computer chooses Scissors
@@ -75,6 +81,9 @@
               break;
             case "s":
               Console.WriteLine("Tie!");
+              break;
+            default:
+              Console.WriteLine("Invalid choice!");
               break;
           }
         }
