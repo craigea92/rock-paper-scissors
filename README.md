@@ -20,3 +20,5 @@ dotnet run
 ```
 
 ## Screenshot
+
+<img width="569" alt="image" src="https://github.com/craigea92/rock-paper-scissors/assets/82875984/218de360-466c-4569-978f-a84ffb34afc8">
