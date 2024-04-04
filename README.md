@@ -2,6 +2,10 @@
 
 ## Project Description
 
+This Rock, Paper, Scissors project aims to create a simple console-based game that allows users to play against the computer. The game will prompt the user to select either Rock, Paper, or Scissors, and then randomly generate a choice for the computer. After both choices are made, the game will determine the winner based on the traditional rules of Rock, Paper, Scissors. First to reach 3 points wins!
+
+In the future, I am going to integrate unit testing to ensure code reliability and maintainability, as well as expand the game with additional options or variants.
+
 ## Tech Stack
 
 <a href="https://learn.microsoft.com/en-us/dotnet/csharp/"> <img src="https://icongr.am/devicon/csharp-original.svg?size=40&color=currentColor" alt="c#"/> </a>
