@@ -19,6 +19,22 @@
       Console.WriteLine("Please enter 'r' for Rock, 'p' for Paper or 's' for Scissors");
       string playerChoice = Console.ReadLine();
 
+      switch(playerChoice)
+      {
+        case "r":
+          Console.WriteLine();
+          Console.WriteLine("You chose Rock");
+          break;
+        case "p":
+          Console.WriteLine();
+          Console.WriteLine("You chose Paper");
+          break;
+        case "s":
+          Console.WriteLine();
+          Console.WriteLine("You chose Scissors");
+          break;
+      }
+
       int computerChoice = random.Next(0, 3);
 
       if (computerChoice == 0) // Computer chooses Rock
@@ -28,7 +44,7 @@
           switch (playerChoice)
           {
             case "r":
-              Console.WriteLine("Tie!");
+              Console.WriteLine("It's a Tie!");
               break;
             case "p":
               Console.WriteLine("Player Wins!");
@@ -54,7 +70,7 @@
               computerScore++;
               break;
             case "p":
-              Console.WriteLine("Tie!");
+              Console.WriteLine("It's a Tie!");
               break;
             case "s":
               Console.WriteLine("Player Wins!");
@@ -80,7 +96,7 @@
               computerScore++;
               break;
             case "s":
-              Console.WriteLine("Tie!");
+              Console.WriteLine("It's a Tie!");
               break;
             default:
               Console.WriteLine("Invalid choice!");
